@@ -1,0 +1,30 @@
+@use "./helpers" as *;
+
+:root {
+  --container-width: 1720px;
+  --transition-duration: 0.4s;
+  --container-padding-x: 5px;
+  --section-padding-x: 40px;
+
+  --swiper-navigation-sides-offset: 1%;
+  --swiper-navigation-top-offset: 55%;
+  --swiper-pagination-bottom: 4%;
+
+  --color-white: #ffffff;
+  --color-white-accent: #a8a8a8;
+  --color-grey:  #1a1a1a;
+  --color-blue: #428bfe;
+  --color-orange: #a84c0a;
+
+  --border-radius: 8px;
+
+  --ff-main: "RobotoSlab", sans-serif;
+  --ff-accent: "Rounded", sans-serif;
+
+
+  --text-shadow-alt: 1px 1px 3px #000, -1px -1px 3px #000;
+
+  --border: 1px solid var(--color-orange);
+  --transition: all var(--transition-duration) ease-in-out;
+  --transition-dropdown: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s;
+}

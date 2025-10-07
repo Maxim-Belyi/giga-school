@@ -1,0 +1,49 @@
+@use "../helpers" as *;
+
+.hero {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: fluid(60, 10);
+  justify-items: center;
+  padding-top: rem(80);
+
+  &__description {
+    max-width: rem(900);
+  }
+
+  &__image {
+    border-radius: 30px;
+  }
+
+
+  &__title {
+    position: relative;
+    padding-top: rem(20);
+    font-size: fluid(64, 18);
+
+    &--highlight {
+      color: var(--color-orange);
+    }
+  }
+
+  &__about {
+    padding-top: rem(24);
+    font-size: fluid(36, 22);
+  }
+
+  &__interests {
+    padding-top: rem(42);
+    font-size: fluid(28, 16);
+  }
+
+  &__ellipse {
+    position: absolute;
+    left: 12%;
+    top: 2%;
+
+    & > svg {
+      width: fluid(520, 240);
+      height: fluid(325, 120);
+    }
+  }
+}

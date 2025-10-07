@@ -1,0 +1,10 @@
+@use "../helpers" as *;
+
+.swiper {
+  max-width: 80%;
+
+  &-button {
+    color: var(--color-white-accent);
+    
+  }
+}

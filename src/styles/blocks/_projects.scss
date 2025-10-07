@@ -1,0 +1,22 @@
+@use "../helpers" as *;
+
+.projects {
+  &__item {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+
+    &-description {
+      font-size: fluid(32, 18);
+      text-align: center;
+    }
+
+    &-link {
+      color: var(--color-blue);
+      text-decoration: underline;
+      font-size: fluid(28, 20);
+      padding-top: rem(20);
+      padding-bottom: rem(16);
+    }
+  }
+}

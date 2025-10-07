@@ -1,0 +1,44 @@
+@use "./helpers" as *;
+
+body {
+  height: 100%;
+  max-width: var(--container-width);
+  padding-inline: var(--container-padding-x);
+  margin-inline: auto;
+  font-family: var(--ff-main);
+  background:var(--color-grey);
+}
+
+section {
+  padding: rem(90) 0;
+  padding-inline: var(--section-padding-x);
+  background: transparent;
+}
+
+a,
+button,
+input,
+textarea,
+svg * {
+  transition-duration: var(--transition-duration);
+  color: var(--black);
+}
+
+p {
+  font-family: var(--ff-accent);
+  color: var(--color-white-accent);
+}
+
+h1, h2, h3, h4 {
+  color: var(--color-white);
+}
+
+h2 {
+  font-size: fluid(42, 24);
+  padding-bottom: rem(52);
+  padding-top: rem(30);
+}
+
+h3{
+  font-size: fluid(30, 20);
+}

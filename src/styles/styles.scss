@@ -1,0 +1,15 @@
+@use './helpers' as *;
+
+@use 'variables';
+@use 'normalize';
+@use 'fonts';
+@use 'globals';
+@use 'utils';
+
+@use './blocks/hero';
+@use './blocks/tabs';
+@use './blocks/swiper';
+@use './blocks/stack';
+@use './blocks/projects';
+@use './blocks/footer';
+@use './blocks/games';

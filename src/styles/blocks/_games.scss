@@ -1,0 +1,50 @@
+@use "../helpers" as *;
+
+.games {
+  &__item {
+    padding-bottom: rem(60);
+  }
+
+  &__title {
+    display: grid;
+    grid-template-columns: 30% auto;
+    align-items: center;
+    justify-items: center;
+  }
+
+  &__name {
+    padding-bottom: rem(20);
+    color: var(--color-orange);
+    font-size: fluid(36, 20);
+  }
+
+  &__inner {
+    display: grid;
+    grid-template-columns: 30% auto;
+    gap: rem(40);
+    font-size: fluid(26, 16);
+  }
+
+  &__button {
+    padding: rem(8) rem(16);
+    border-radius: var(--border-radius);
+
+    &:hover {
+      background-color: var(--color-orange);
+      color: var(--color-white);
+    }
+  }
+
+  &__description {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    max-height: 0;
+    overflow: hidden;
+    transition: var(--transition);
+  }
+
+  &__description.is-open {
+    max-height: rem(300);
+  }
+}
