@@ -3,8 +3,18 @@
 .swiper {
   max-width: 80%;
 
+  @include w1200 {
+    max-width: 100%;
+  }
+
   &-button {
+    --swiper-navigation-top-offset: 60%;
+    width: fluid(44, 18);
+    height: fluid(44, 18);
     color: var(--color-white-accent);
-    
+
+    @include w660 {
+      display: none;
+    }
   }
 }

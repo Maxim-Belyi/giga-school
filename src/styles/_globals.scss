@@ -6,12 +6,16 @@ body {
   padding-inline: var(--container-padding-x);
   margin-inline: auto;
   font-family: var(--ff-main);
-  background:var(--color-grey);
+  background: var(--color-grey);
+  padding-inline: var(--section-padding-x);
+
+  @include w1200 {
+   padding-inline: rem(10);
+  }
 }
 
 section {
-  padding: rem(90) 0;
-  padding-inline: var(--section-padding-x);
+  padding: fluid(90, 40) 0;
   background: transparent;
 }
 
@@ -29,7 +33,10 @@ p {
   color: var(--color-white-accent);
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   color: var(--color-white);
 }
 
@@ -39,6 +46,6 @@ h2 {
   padding-top: rem(30);
 }
 
-h3{
+h3 {
   font-size: fluid(30, 20);
 }

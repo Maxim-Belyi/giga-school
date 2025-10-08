@@ -3,9 +3,9 @@
 
 $w1200: 1200px;
 
-$tablet: 1023px;
+$w1023: 1023px;
 
-$mobile: 767px;
+$w660: 660px;
 
 $mobile-s: 480px;
 
@@ -15,14 +15,14 @@ $mobile-s: 480px;
   }
 }
 
-@mixin tablet {
-  @media (max-width: $tablet) {
+@mixin w1023 {
+  @media (max-width: $w1023) {
     @content;
   }
 }
 
-@mixin mobile {
-  @media (max-width: $mobile) {
+@mixin w660 {
+  @media (max-width: $w660) {
     @content;
   }
 }

@@ -1,4 +1,4 @@
-import { initSlider } from "./swiper.js";
+import { initSlider } from './Swiper.js';
 import TabsCollection from './Tabs';
 import { showDescription } from "./showDescription.js";
 

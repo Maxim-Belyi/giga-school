@@ -1,0 +1,7 @@
+@use "../helpers" as *;
+
+.title {
+    &--highlight {
+        color: var(--color-orange);
+    }
+}

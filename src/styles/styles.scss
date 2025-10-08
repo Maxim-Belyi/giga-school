@@ -6,6 +6,7 @@
 @use 'globals';
 @use 'utils';
 
+@use './blocks/title';
 @use './blocks/hero';
 @use './blocks/tabs';
 @use './blocks/swiper';

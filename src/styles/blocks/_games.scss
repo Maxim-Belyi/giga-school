@@ -2,32 +2,41 @@
 
 .games {
   &__item {
-    padding-bottom: rem(60);
-  }
-
-  &__title {
     display: grid;
     grid-template-columns: 30% auto;
-    align-items: center;
+    grid-template-rows: auto auto;
     justify-items: center;
+    align-items: center;
+    padding-bottom: rem(60);
+    column-gap: fluid(40, 20);
+    row-gap: rem(10);
+
+    @include w1023 {
+      grid-template-columns: 100%;
+      grid-template-areas:
+      "name"
+      "image"
+      "button"
+      "description";
+    }
   }
 
   &__name {
+    grid-area: name;
     padding-bottom: rem(20);
     color: var(--color-orange);
-    font-size: fluid(36, 20);
+    font-size: fluid(32, 24);
   }
 
-  &__inner {
-    display: grid;
-    grid-template-columns: 30% auto;
-    gap: rem(40);
-    font-size: fluid(26, 16);
+  &__image {
+    grid-area: image;
   }
 
   &__button {
-    padding: rem(8) rem(16);
+    grid-area: button;
+    padding:fluid(12, 6) fluid(16, 8);
     border-radius: var(--border-radius);
+    font-size: fluid(16, 12);
 
     &:hover {
       background-color: var(--color-orange);
@@ -36,15 +45,15 @@
   }
 
   &__description {
-    display: flex;
-    align-items: center;
+    grid-area: description;
     text-align: center;
     max-height: 0;
     overflow: hidden;
+    font-size: fluid(22, 14);
     transition: var(--transition);
   }
 
   &__description.is-open {
-    max-height: rem(300);
+    max-height: rem(400);
   }
 }

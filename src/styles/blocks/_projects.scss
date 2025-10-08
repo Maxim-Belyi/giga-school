@@ -7,14 +7,14 @@
     align-items: center;
 
     &-description {
-      font-size: fluid(32, 18);
+      font-size: fluid(26, 16);
       text-align: center;
     }
 
     &-link {
       color: var(--color-blue);
       text-decoration: underline;
-      font-size: fluid(28, 20);
+      font-size: fluid(24, 16);
       padding-top: rem(20);
       padding-bottom: rem(16);
     }

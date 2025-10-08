@@ -8,6 +8,7 @@
   &__button {
     border-radius: var(--border-radius);
     padding: rem(6) rem(12);
+    font-size: fluid(16, 12);
 
     &:hover{
         scale: 1.15;
@@ -20,7 +21,6 @@
   }
 
   &__content {
-    padding-bottom: rem(120);
     &:not(.is-active) {
       display: none;
     }
